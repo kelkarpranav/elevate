@@ -1,0 +1,58 @@
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><h2>Brands <a class="btn btn-primary pull-right" href="#/brands/new"><i class="icon-plus-sign icon-white"></i> Add New</a></h2>
+
+<table class="table table-striped">
+    <tr ng-repeat="brand in brands">
+        <td>{{brand.brand}}</td>
+        <td>{{brand.brandDescription.brandDescription}}</td>
+        <td>
+            <div class="pull-right">
+                <a class="btn btn-info" href="#/brands/{{brand.id}}">
+                    <i class="icon-pencil icon-white"></i> Edit
+                </a>
+                <button class="btn btn-danger" ng-click="deletebrand(brand)">
+                    <i class="icon-trash icon-white"></i> Delete
+                </button>
+            </div>
+        </td>
+    </tr>
+</table>

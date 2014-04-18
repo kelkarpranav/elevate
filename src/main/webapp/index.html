@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html ng-app="sprang">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/toastr.css"/>
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <title>Elevate</title>
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-1.8.2.min.js"></script>
+<script src="/js/jquery.scrollTo-1.4.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.scrollorama.js"></script>
+<script src="/js/jquery.scrolldeck.js"></script>
+<script type="text/javascript" src="js/circletype.js"></script>
+<script type="text/javascript" src="js/jquery.lettering.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  RepositionNav();
+
+  var deck = new $.scrolldeck({
+    buttons: '.nav-button',
+    slides: '.slide',
+    duration: 600,
+    easing: 'easeInOutExpo',
+    offset: 0
+  });
+  
+  $(window).resize(function(){
+    RepositionNav();
+  }); 
+  
+  //.parallax(xPosition, adjuster, inertia, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //adjuster - y position to start from
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+  $('#intro').parallax("50%", 0, 0.1, true);
+  $('#team').parallax("50%", 0, 0.00001, true);
+  $('.bg').parallax("50%", 2500, 0.4, true);
+  $('#social').parallax("50%", 0, 0.3, true);
+
+  // Make arc-text arcy
+  $('.arc-text').circleType({radius: 900});
+  $('.arc-text-negative').circleType({radius: 500, dir: -1});
+});
+</script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">ELEVATE</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav" role="navigation">
+                    <li>
+                        <a href="#/books">Books</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-collapse collapse">
+                <ul class="nav" role="navigation">
+                    <li>
+                        <a href="#/brands">Brands</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div id="first" class="slide">
+    <div class="story">
+        <div class="center">
+          <h1 class="description">ELEVATE</h1>
+          <br>
+          <br>
+          <h3>Redefining brand value</h3>
+        </div>
+        <div class="float-right"><a href="#"><img src="img/apple-store.png" /></a></div>
+        <div class="float-left"><img src="img/android-store.png" /></a></div>
+        <img id="arrow" src="img/arrow.png" />
+      </div>	
+  </div>
+  
+  <div id="intro" class="slide">
+    <div class="story">
+      <!-- <div class="bg"></div> -->
+      <div class="float-right">
+        <ul>
+          <li><h2>Introduction</h2></li>
+          <li><p>We help you analyze your brand's impact on social media. We help you bolster your position into your customer's mind.</p></li>
+          <li><p>We ensure you are prescribed well. Our analytics help you elevate your <b>brand!</b> </p></li>
+        </ul>
+      </div>
+      </div>
+  </div>
+
+  <div id="team" class="slide">
+    <div class="story">
+        <div id="team-box" class="center">
+          <h1 class="arc-text">How we do it ?</h1>
+            <ul>
+              
+              <li style="background:  url('img/profile-ed.png') no-repeat top left;" class="animate-build" data-build="1"><p> - Amazon</p><blockquote class="description">Who has time to read your competitor's user feedback? We analyze Amazon for similar brands and read their customer reviews for you! You just need to sit and relax!"</blockquote></li>
+                            
+              <li style="background:  url('img/profile-kostas.png') no-repeat top left;" class="animate-build" data-build="4"><p> - Twitter</p><blockquote class="description">"Check your imapct on Twitter. We analyze people yelling about your brand! Who knows what they are saying otherwise! </blockquote></li>
+              
+              <li style="background:  url('img/profile-ashley.png') no-repeat top left;"class="animate-build" data-build="2"><p> - Yelp </p><blockquote class="description">"Rupesh Dabbir's Module</blockquote></li>
+              
+              <li style="background:  url('img/profile-evan.png') no-repeat top left;"class="animate-build" data-build="3"><p> - </p><blockquote class="description">Vaneet Singh</blockquote></li>
+              
+            </ul>
+        </div>
+      </div>
+  </div>
+
+  <div id="crowd" class="slide">
+    <div class="story">
+        <div class="float-left" data-animation="fly-in-left">
+            <h1 class="arc-text">Brand Value Analysis</h1>
+              <h3>Taking brands to the next level</h3>
+              <p>Together we can take brand value as a concept to the next level. Together we can progress <br/> <b>BIG profits!.</b></p>
+        </div>
+       
+      </div>
+  </div>
+
+  <div id="social" class="slide">
+    <div class="story">
+      <div class="row" role="navigation">
+        <a href="#/brands">Amazon</a> 
+    
+      </div>
+    </div>
+  </div>
+
+<div class="container" ng-view>
+
+</div>
+
+<script src="/js/jquery-1.9.1.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/angular.js"></script>
+<script src="/js/angular-resource.js"></script>
+<script src="/js/toastr.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

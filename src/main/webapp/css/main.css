@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'Boogaloo';
+  src: url('../fonts/Boogaloo-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Vezus-Light';
+  src: url('../fonts/Vezus-Light.otf');
+}
+
+html {
+  /*overflow: hidden;*/
+}
+
+h1 {
+  font-family: 'Boogaloo';
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Boogaloo';
+  font-size: 2.5em;
+}
+
+h3 {
+  font-family: 'Boogaloo';
+  font-size: 2.2em;
+}
+
+p {
+  font-family: 'Vezus-Light';
+  font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-align: left;
+}
+
+a {
+  color: inherit;
+}
+
+.row {
+  width: 980px !important;
+}
+
+.float-left{
+  float: left;  
+  margin: 0 0 0 20px;
+}
+
+.float-right{
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+.top-spacing {
+  margin-top: 100px;
+}
+
+.center{
+  font-size: 2.5em;
+  padding: 80px 0 0 0;
+  text-align: center;
+}
+
+#header, #intro, #second{
+  width: 100%;
+}
+
+#first{
+  background: url(../img/san-fran.jpg) 50% -75px no-repeat fixed;
+  color: white;
+  height: 1000px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+#intro{
+  background: url(../img/scrolling.jpg) 50% 0 no-repeat fixed;
+  color: black;
+  height: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+#intro .bg{
+  background: url(../img/trainers.png) 10% 0 no-repeat fixed;
+  height: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 900px;
+  z-index: 200;
+}
+
+#team{
+  background: url(../img/alone.jpg) 50% 0 no-repeat fixed;
+  color: black;
+  height: 1200px;
+  padding: 0 0 0 0; 
+}
+
+#team p {
+  font-size: 0.8em;
+  display: inline;
+}
+
+#team li {
+  padding-left: 80px;
+  margin-top: 25px;
+}
+
+#team h1 {
+  color: #FFC501;
+}
+
+#team .description {
+  font-family: 'Vezus-Light';
+  font-size: 0.45em;
+  border-left: 2px #FFC501 solid !important;
+}
+
+#crowd {
+  background: url(../img/life.jpg) 50% 0 no-repeat fixed;
+  color: black;
+  height: 900px;
+  padding: 200px 0 0 0; 
+}
+
+#crowd h1 {
+  font-size: 5.5em;
+}
+
+#social {
+  background: #00CBFF 50% 0 no-repeat fixed;
+  color: white;
+  height: 250px !important;
+  padding: 100px 0 0 0;
+}
+
+#social p {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#social .col-md-4 {
+  height: 100px;
+}
+
+#social .col-md-4:hover {
+  color: #FFC501;
+}
+
+
+.story{
+  margin: 0 auto;
+  min-width: 980px;
+  overflow: auto;
+  width: 980px;
+}
+
+.or-block {
+  display: block;
+}
+
+.story .float-left, .story .float-right{
+  padding: 100px 0 0 0;
+  position: relative;
+  width: 350px; 
+}
+
+.slide {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 500px;
+  height: 50rem;
+  padding: 100px 0 200px;
+  padding: 10rem 0 20rem;
+  text-align: center;
+}
+
+.circular {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(http://link-to-your/image.jpg) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#arrow {
+  margin-top: 150px;
+}
